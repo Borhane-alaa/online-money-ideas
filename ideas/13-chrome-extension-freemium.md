@@ -42,7 +42,7 @@ Examples: `Grammarly`, `1Password`, `Loom`, `Hunter.io`, `Vimium`,
 
 1. Pick a niche you use daily. The extension should solve a problem you have.
 2. MVP in 1–2 weeks. Manifest V3 forces it.
-3. Submit to Chrome Web Store (1–3 day review).
+3. Submit to Chrome Web Store (1–3 day review). *(Dev publisher account already paid and active — zero account-setup cost.)*
 4. PH launch + Twitter + the niche subreddit.
 5. Iterate based on the reviews left in the store.
 

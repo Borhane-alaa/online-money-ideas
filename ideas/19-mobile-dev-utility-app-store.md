@@ -43,8 +43,12 @@ inspectors, JSON viewers, SQL clients, REST testers, network tools.
 2. Build a polished native app. Don't cross-compile a web app into a
    Capacitor wrapper — the store ranking algorithms punish that.
 3. Price at $4.99/mo or $39.99/yr (the App Store sweet spot for utility).
-5. Submit, expect 1–3 day review, expect first rejection cycle.
-6. Promote on Product Hunt + relevant subreddits + your network.
+4. Submit, expect 1–3 day review, expect first rejection cycle.
+5. Promote on Product Hunt + relevant subreddits + your network.
+
+*(Google Play developer account already paid and active — APK publishing
+is unblocked, no account-setup tax. iOS App Store still requires
+Apple Developer enrollment.)*
 
 ## Risks & gotchas
 

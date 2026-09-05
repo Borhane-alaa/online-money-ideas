@@ -56,3 +56,6 @@ and / or a premium tier.
 Validate next. Highest-leverage option if you already have ANY audience
 (Twitter, GitHub stars, conference circuit). Without audience, it's a 12-month
 ramp before sponsorships.
+
+*Note: user has Google Play + Chrome Web Store publisher accounts active, so
+any Android or extension variant of this idea is unblocked at zero setup cost.*
