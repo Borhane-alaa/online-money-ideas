@@ -1,4 +1,4 @@
-# 2026-09-05 — 7-day market analysis
+# 2026-09-05 — 7-day market analysis (revised for Android-only)
 
 ## What I did
 
@@ -14,61 +14,73 @@
     creator-economy category; PixelPeeper (HN 35567822) is the canonical
     proof point at $2k/mo after 6 years.
 
+- **Revision (after user correction):** user has only **Google Play
+  developer account + Chrome Web Store developer account**; no Apple
+  Developer. So #19 is **Android-only**, and **#13 Chrome extension
+  becomes candidate #4** (previously rejected). Re-ran Play Store
+  scrape for 8 dev-utility keywords (151 unique apps) and re-ranked.
+
 - Wrote `/research/runs/06-market-analysis/07-day-market-analysis.md`
   with side-by-side scorecard and ranked recommendation.
 
-## Ranked recommendation
+## Ranked recommendation (post-revision)
 
-1. **#19 mobile dev utility on App Store** — first pick
-2. **#21 creator-niche micro-SaaS** — pivot if mobile is wrong shape
-3. **#20 privacy-first analytics** — wrong shape for 7 days, move to 30-day build
+1. **#19 Android dev utility on Play Store** — first pick
+2. **#13 Chrome extension** — second pick (uses publisher-account bonus)
+3. **#21 creator-niche micro-SaaS** — third pick (web only)
+4. **#20 privacy-first analytics** — fourth pick; needs 30-day build
 
-## Why #19 over the other two
+## Fresh Android-specific findings
 
-- Publisher account already paid = lowest cash + time friction to ship
-  (Android path is unblocked; iOS still needs $99 Apple Developer).
-- **Distribution problem is bounded.** App Store SEO + 1 HN launch =
-  most of the GTM. Privacy analytics depends on months of SEO;
-  creator-niche depends on luck in a subreddit.
-- **Ceiling is highest in the 12-month realistic window.** Solo dev
-  utility at $5k–$20k MRR is well-documented (Proxyman iOS, PlaylistAI,
-  HTTP Toolkit); $100k+ ARR privacy analytics takes 3+ years of SEO.
-- Risk profile is cleanest: ongoing value, no LLM-disruption exposure
-  per idea #22 risk register, low maintenance tax.
+- **149/151 (99%) dev-utility Android apps in the scraped keywords are
+  free.** Only 5 paid apps across 8 keywords.
+- **Canonical Android incumbents already exist:** Proxyman Android
+  (`com.proxyman.proxymanandroid`) and HTTP Toolkit Android
+  (`tech.httptoolkit.android.v1`). Niche of HTTP capture is taken.
+- **Most underserved Android dev-utility niche:** GraphQL client/viewer
+  — 1 competitor, no paid option.
+- **Android revenue ceiling is 5–10× lower than iOS** (verified public
+  disclosures of Proxyman founder: $2k MRR is iOS, with macOS being
+  the bigger business; Android alone presumably $500/mo range).
 
-## What I am explicitly NOT recommending for the 7-day window
+## Why #19 is still 1st (despite Android-only revenue ceiling)
 
-- #13 Chrome extension — directly parallel to #19 in distribution shape.
-  Build #19 first; add Chrome in week 8 if I love it.
-- #24 extension-monetization infra — only matters after #13 exists.
-- #25 acquire-existing — wrong shape for 7 days (needs capital +
-  sourcing, not code).
+- **Zero cash outlay** (publisher account already paid).
+- Distribution problem is bounded (Play Store SEO + 1 HN launch = GTM).
+- The ceiling concern is mitigated by the **iOS-port upgrade path**:
+  ship Android-only, validate, then add iOS for 5–10× the ceiling
+  (after $1k MRR threshold, the $99/yr Apple Developer fee is
+  trivial).
+- GraphQL niche on Android is the fresh-data winner for the wedge.
 
 ## Decisions made today
 
-- **#19 is the bet.** I'm recording it here so when the user asks me
-  to start the operational plan, I don't re-litigate the choice.
+- **#19 is the bet, GraphQL wedge preferred.** Recording it here so when
+  the user asks me to start the operational plan, I don't re-litigate
+  the choice.
 - The 7-day plan in the analysis is:
-  - Day 1: pick wedge + start Xcode project
-  - Day 2-3: MVP (capture + decode + paywall via StoreKit 2)
-  - Day 4: Android equivalent or iOS polish
-  - Day 5: App Store submission (screenshots, metadata)
-  - Day 6: TestFlight to 10 dev friends
-  - Day 7: Soft-launch (HN + r/iOSProgramming + personal network)
+  - Day 1: pick wedge + start Android Studio project (Kotlin)
+  - Day 2-3: MVP (query editor + response viewer + saved queries)
+  - Day 4: paywall (Play Billing Library 7), $2.99/mo or $19.99/yr,
+    7-day trial
+  - Day 5: Play Console submission (screenshots, metadata)
+  - Day 6: Internal test track to 10 dev friends
+  - Day 7: Production rollout to 5% then 100%, soft-launch on HN +
+    r/androiddev + r/GraphQL
 
 ## Open questions for the user (next turn)
 
-1. Confirm #19 vs. #21 vs. #20.
-2. If #19: which wedge? (My recommendations are below.)
+1. Confirm #19 vs. #13 vs. #21 vs. #20.
+2. If #19: which wedge? (My recommendation is GraphQL.)
 
-### Recommended wedges for #19 (mobile dev utility)
+### Recommended wedges for #19 (Android dev utility, fresh data)
 
 | wedge | rationale | risk |
 |-------|-----------|------|
-| **GraphQL debugger for iOS** | high-velocity stack, no clear native winner, dev pays $5/mo for a tool that saves them 1h/wk | very narrow |
-| **LLM-call HTTP capture for iOS** | new category, every LLM dev needs this, no incumbent | novel, uncertain demand |
-| **Webhook tester / sender for iOS** | older problem, real recurring need, few iOS-native options | medium saturation |
-| **Postgres client for iOS (PG Orbit adjacent)** | developer-utility proven revenue, but already has PG Orbit | medium |
+| **GraphQL client/viewer for Android** | 1 competitor, no paid option, no Proxyman equivalent | narrow but unblocked |
+| **REST client w/ AI generation (URL→cURL→body)** | REST has 23 apps but 0 paid winners; AI-wedge makes it novel | novel, uncertain demand |
+| **Webhook tester / sender for Android** | 25 apps, only 2 paid, no clear winner | medium saturation, but underserved paid tier |
+| **LLM-call HTTP capture for Android** | every LLM dev needs this; captures OpenAI/Anthropic/Gemini calls | novel, depends on intercept reliability |
 
 ## Next action (waiting on user)
 

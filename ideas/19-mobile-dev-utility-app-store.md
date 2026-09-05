@@ -39,16 +39,17 @@ inspectors, JSON viewers, SQL clients, REST testers, network tools.
 ## Cold-start plan
 
 1. Pick a desktop dev tool you already use, and look for the equivalent
-   pain point on iOS.
+   pain point on Android.
 2. Build a polished native app. Don't cross-compile a web app into a
    Capacitor wrapper — the store ranking algorithms punish that.
-3. Price at $4.99/mo or $39.99/yr (the App Store sweet spot for utility).
+3. Price at $2.99–$4.99/mo or $19.99–$39.99/yr (Google Play sweet spot for
+   utility; Apple is $4.99/$39.99).
 4. Submit, expect 1–3 day review, expect first rejection cycle.
 5. Promote on Product Hunt + relevant subreddits + your network.
 
 *(Google Play developer account already paid and active — APK publishing
-is unblocked, no account-setup tax. iOS App Store still requires
-Apple Developer enrollment.)*
+is unblocked, no account-setup tax. iOS App Store is NOT enrolled; any
+iOS variant requires $99/yr Apple Developer signup first.)*
 
 ## Risks & gotchas
 
@@ -62,8 +63,12 @@ Apple Developer enrollment.)*
 
 ## Verdict
 
-Validate next. Higher ceiling than the average indie SaaS because the App
-Store distribution problem is bounded. Real revenue proof.
+Validate next. Higher ceiling than the average indie SaaS because the
+Play Store distribution problem is bounded. Real revenue proof.
+
+**Note for the 7-day analysis: user has Google Play developer account
+active but NOT iOS. This idea's distribution becomes Android-only, which
+re-orders the choice between #19 and other ideas in this vault.**
 
 ## Sources
 
