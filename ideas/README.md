@@ -68,5 +68,13 @@ Then sections: `## Premise`, `## How coding automates it`,
 | 15 | ebook-prompt-pack | validate-next | 2 | 2 | 2 | 1 | Curated prompt packs on Gumroad/Lemon Squeezy |
 | 16 | twitter-thread-automation | validate-next | 3 | 2 | 2 | 2 | LLM-driven niche thread accounts |
 | 17 | open-source-sponsorship | validate-next | 2 | 3 | 3 | 1 | Build OSS dev tool, get GH Sponsors |
+| 18 | disposable-utility-saas | validate-next | 4 | 3 | 3 | 2 | 33mail-style recurring utility nobody wants to build |
+| 19 | mobile-dev-utility-app-store | validate-next | 4 | 3 | 4 | 2 | iOS/macOS dev utility, App Store subscription |
+| 20 | privacy-first-analytics | validate-next | 4 | 4 | 4 | 2 | Plausible/Pirsch-style cookie-free analytics |
+| 21 | micro-saas-creator-niche | validate-next | 3 | 3 | 3 | 1 | Tiny SaaS for one creator workflow (PixelPeeper) |
+| 22 | llm-replacing-micro-saas | dropped-for-some | – | – | – | – | RISK REGISTER — Pragmatic Engineer 20-min SaaS replacement |
+| 23 | niche-content-site-subscription | validate-next | 3 | 3 | 3 | 1 | jpdb/get-notes-style site w/ Patreon or ads |
+| 24 | extension-monetization-infra | validate-next | 5 | 5 | 4 | 3 | ExtensionPay-style payment SDK for other devs |
+| 25 | acquire-micro-saqs-operator | back-burner | 4 | 3 | 3 | 3 | Buy small SaaS, optimize, hold or flip |
 
 (Live list, see the per-idea files for full detail.)

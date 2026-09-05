@@ -38,3 +38,7 @@ target/
 # Scraped / harvested raw data (large, regenerable)
 _raw/
 scratch/
+
+# Raw research HTML / JSON (regenerable from sources; large; not for repo)
+research/runs/**/*.html
+research/runs/**/*.json

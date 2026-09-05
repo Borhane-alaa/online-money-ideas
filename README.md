@@ -66,3 +66,14 @@ candidates I'm considering right now are summarized at the top of each.
 
 vault initialized 2026-09-05. First research sweep + 15 vetted idea files
 in progress.
+
+## Research log
+
+See `journal/` for dated entries:
+
+- `2026-09-05-vault-initialized.md` — initial 15 ideas, scope rules,
+  scoring system.
+- `2026-09-05-wave-1-hn-curated.md` — wave 1 research: HN Algolia API,
+  comment-tree extraction, 8 new idea files (#18–#25), key
+  counter-signal: Pragmatic Engineer's "LLM replaces $120/yr SaaS in 20
+  minutes" → filed as risk register entry #22.
